@@ -118,8 +118,8 @@
         self.streak.textColor = [UIColor orangeColor];
         
         //arc4random_uniform is a method that randomly selects a number for you. If you put 20 inside the ( ) it will give you a number from 1-19
-        self.firstNumber = arc4random_uniform(20);
-        self.secondNumber = arc4random_uniform(20);
+        self.firstNumber = arc4random_uniform(10);
+        self.secondNumber = arc4random_uniform(10);
         
     }
     
@@ -334,7 +334,7 @@
     
     // If self.seconds == 10, the user is out of time and the answer is wrong
     
-    if (self.seconds == 10) {
+    if (self.seconds == 1000000000) {
         
         //answer is wrong (out of time), turn view red
         self.view.backgroundColor = [UIColor colorWithRed:241.0/255.0 green:160.0/255.0 blue:160.0/255.0 alpha:1.0];
@@ -350,17 +350,16 @@
         
         //if the user broke their high score, update it
         if (self.totalStreak > self.highScore) {
-            
             NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-            
             [defaults setInteger:self.totalStreak forKey:@"HighScore"];
-            
             [defaults synchronize];
-            
-            //reset total streak to 0
-            self.totalStreak = 0;
-            
+            self.highscoreLabel.text = [NSString stringWithFormat:@"High Score: %d",self.highScore];
+            [self updateMedal];
         }
+        
+        //reset total streak to 0
+        self.totalStreak = 0;
+        
         //not on a streak, so hide the label
         self.streak.hidden = YES;
         
