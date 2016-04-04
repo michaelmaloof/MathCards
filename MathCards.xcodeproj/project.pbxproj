@@ -505,6 +505,7 @@
 				22FEABFC1CB1AEC80001AE18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22FEABFD1CB1AEC80001AE18 /* Build configuration list for PBXNativeTarget "MathCardsTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +514,7 @@
 				22FEABFF1CB1AEC80001AE18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22FEAC001CB1AEC80001AE18 /* Build configuration list for PBXNativeTarget "MathCardsUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +523,7 @@
 				22FEAC021CB1AEC80001AE18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
