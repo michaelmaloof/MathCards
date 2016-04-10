@@ -1,6 +1,6 @@
 # MathCards
 
-I'm writing a book to teach others how to code in objective-c. This is the first app the reader will make in the book.
+I'm writing a book to teach others how to code in objective-c. This is the first app the reader will make in the book. Any repos with "Jetpack Dinosuar" in the description are part of the book I am writing.
 
 Challenge 1: Classes, Variables, Properties, Methods
 
